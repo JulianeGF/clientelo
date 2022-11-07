@@ -10,7 +10,6 @@ public abstract class Relatorios {
 
     private static final Logger logger = LoggerFactory.getLogger(Relatorios.class);
 
-        //listar 3 produtos (em ordem decrescente pela quantidade) com a maior quantidade vendida
     public static List<ProdutoMaisVendido> gerarRelatorioProdutosMaisVendidos(List<Pedido> pedidos) {
         List<ProdutoMaisVendido> produtosMaisVendidos = new ArrayList<>();
 
@@ -25,7 +24,6 @@ public abstract class Relatorios {
         return produtosMaisVendidos;
     }
 
-    // em ordem alfabetica, listar o nome da categoria, a quantidade de produtos dela que foi vendido e o montante vendido
         public static List<VendaPorCategoria> gerarRelatorioVendasPorCategoria(List<Pedido> pedidos) {
             List<VendaPorCategoria> vendaPorCategoria = new ArrayList<>();
 

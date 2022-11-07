@@ -10,7 +10,7 @@ public class Pedido {
     private String cliente;
     private BigDecimal preco;
     private int quantidade;
-    private BigDecimal totalPedido;
+    private BigDecimal valorTotal;
     private LocalDate data;
 
     public Pedido(String categoria, String produto, String cliente, BigDecimal preco, int quantidade, LocalDate data) {
@@ -19,7 +19,7 @@ public class Pedido {
         this.cliente = cliente;
         this.preco = preco;
         this.quantidade = quantidade;
-        this.totalPedido = this.preco.multiply(new BigDecimal(this.quantidade));
+        this.valorTotal = this.preco.multiply(new BigDecimal(this.quantidade));
         this.data = data;
     }
 
@@ -44,11 +44,20 @@ public class Pedido {
     }
 
     public BigDecimal getTotalPedido() {
-        return totalPedido;
+        return valorTotal;
     }
 
     public LocalDate getData() {
         return data;
+    }
+
+    public boolean isMaisBaratoQue(Pedido outroPedido) {
+        return outroPedido.valorTotal.compareTo(this.valorTotal) < 1;
+
+    }
+    
+    public boolean isMaisCaroQue(Pedido outroPedido) {
+        return valorTotal.compareTo(outroPedido.valorTotal) == 0;
     }
 
     @Override
@@ -62,5 +71,4 @@ public class Pedido {
                 ", data=" + data +
                 '}';
     }
-
 }
