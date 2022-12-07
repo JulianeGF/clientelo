@@ -7,11 +7,13 @@ import javax.validation.Valid;
 
 import br.com.alura.clientelo.dto.CategoriaDto;
 import br.com.alura.clientelo.form.CategoriaForm;
+import br.com.alura.clientelo.vo.VendasVo;
 import br.com.alura.clientelo.model.Categoria;
 import br.com.alura.clientelo.service.CategoriaService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -59,4 +61,11 @@ public class CategoriaController {
         return categoriaService.getCategorias();
     }
 
+    @GetMapping("/vendas")
+    @ResponseBody
+    @Cacheable(value = "listaDeVendas")
+    public ResponseEntity<List<VendasVo>> vendas() {
+        return ResponseEntity.status(HttpStatus.OK).body(categoriaService.getVendas());
+    }
 }
+//controller, service, repository

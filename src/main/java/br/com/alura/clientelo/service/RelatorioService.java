@@ -3,7 +3,7 @@ package br.com.alura.clientelo.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import br.com.alura.clientelo.report.Report;
+import br.com.alura.clientelo.repository.report.Report;
 
 public class RelatorioService {
 

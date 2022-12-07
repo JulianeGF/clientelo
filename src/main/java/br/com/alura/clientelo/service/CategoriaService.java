@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import br.com.alura.clientelo.vo.VendasVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,5 +43,9 @@ public class CategoriaService {
         Categoria categoria = obj.orElse(new Categoria());
 
         return CategoriaDto.converter(categoria);
+    }
+
+    public List<VendasVo> getVendas() {
+       return categoriaRepository.vendasPorCategoria();
     }
 }
