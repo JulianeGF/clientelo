@@ -25,7 +25,7 @@ public class Cliente {
     @Embedded
     private Endereco endereco;
 
-    @OneToOne()//o que fazer nessa notacao
+    @OneToOne(mappedBy = "cliente", cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
     private Usuario usuario;
 
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)

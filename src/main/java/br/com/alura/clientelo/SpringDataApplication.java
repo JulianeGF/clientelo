@@ -25,13 +25,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 public class SpringDataApplication implements CommandLineRunner {
 
-    private final CategoriaRepository categoriaRepository;
-
-    private final ClienteRepository clienteRepository;
-
-    public SpringDataApplication(CategoriaRepository categoriaRepository, ClienteRepository clienteRepository) {
-        this.categoriaRepository = categoriaRepository;
-        this.clienteRepository = clienteRepository;
+    public SpringDataApplication(CategoriaRepository categoriaRepository, ClienteRepository clienteRepository, UsuarioRepository usuarioRepository) {
     }
 
     public static void main(String[] args) {
