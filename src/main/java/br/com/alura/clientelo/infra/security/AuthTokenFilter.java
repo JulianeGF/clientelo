@@ -1,4 +1,4 @@
-package br.com.alura.clientelo.config.security;
+package br.com.alura.clientelo.infra.security;
 
 import java.io.IOException;
 import java.util.Optional;

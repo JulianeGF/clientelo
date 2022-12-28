@@ -1,8 +1,8 @@
 package br.com.alura.clientelo.controller;
 
-import br.com.alura.clientelo.config.security.TokenService;
-import br.com.alura.clientelo.config.security.LoginForm;
-import br.com.alura.clientelo.config.security.TokenDto;
+import br.com.alura.clientelo.infra.security.TokenService;
+import br.com.alura.clientelo.infra.security.LoginForm;
+import br.com.alura.clientelo.infra.security.TokenDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +18,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/auth")
-@Profile(value = {"production", "test"})
+@Profile(value = {"prod", "test"})
 public class AutenticationController {
 
     @Autowired

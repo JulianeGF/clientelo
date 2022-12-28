@@ -1,4 +1,4 @@
-package br.com.alura.clientelo.config.security;
+package br.com.alura.clientelo.infra.security;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 

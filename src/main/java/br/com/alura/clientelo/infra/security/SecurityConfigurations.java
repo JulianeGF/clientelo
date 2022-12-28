@@ -1,4 +1,4 @@
-package br.com.alura.clientelo.config.security;
+package br.com.alura.clientelo.infra.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -48,6 +48,7 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/api/categorias/*").permitAll()
                 .antMatchers(HttpMethod.GET, "/api/clientes/*").permitAll()
                 .antMatchers(HttpMethod.GET, "/api/pedidos/*").permitAll()
+                .antMatchers(HttpMethod.GET, "/actuator").permitAll()
                 .anyRequest().authenticated()
                 .and().csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)

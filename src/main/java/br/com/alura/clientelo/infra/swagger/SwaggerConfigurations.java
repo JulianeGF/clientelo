@@ -1,4 +1,4 @@
-package br.com.alura.clientelo.config.swagger;
+package br.com.alura.clientelo.infra.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
