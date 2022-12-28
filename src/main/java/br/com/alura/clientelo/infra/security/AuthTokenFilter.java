@@ -12,8 +12,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import br.com.alura.clientelo.model.Usuario;
-import br.com.alura.clientelo.repository.UsuarioRepository;
+import br.com.alura.clientelo.application.model.usuarioEntity.Usuario;
+import br.com.alura.clientelo.application.repository.UsuarioRepository;
 
 public class AuthTokenFilter extends OncePerRequestFilter {
 

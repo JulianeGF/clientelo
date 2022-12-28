@@ -1,15 +1,13 @@
 package br.com.alura.clientelo;
 
-import java.util.List;
-
+import br.com.alura.clientelo.application.repository.CategoriaRepository;
+import br.com.alura.clientelo.application.repository.ClienteRepository;
+import br.com.alura.clientelo.application.repository.UsuarioRepository;
 import br.com.alura.clientelo.repository.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import br.com.alura.clientelo.model.Cliente;
-import br.com.alura.clientelo.vo.RelatorioClientePedidosVo;
-import br.com.alura.clientelo.vo.RelatorioClientePorMontanteVo;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;

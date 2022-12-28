@@ -15,7 +15,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import br.com.alura.clientelo.repository.UsuarioRepository;
+import br.com.alura.clientelo.application.repository.UsuarioRepository;
 
 @EnableWebSecurity
 @Configuration
