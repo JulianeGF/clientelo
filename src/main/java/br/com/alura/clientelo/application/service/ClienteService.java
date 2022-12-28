@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import br.com.alura.clientelo.application.controller.clienteController.clienteDto.ClienteDto;
-import br.com.alura.clientelo.application.model.clienteEntity.Cliente;
-import br.com.alura.clientelo.application.repository.ClienteRepository;
+import br.com.alura.clientelo.domain.model.clienteEntity.Cliente;
+import br.com.alura.clientelo.domain.repository.ClienteRepository;
 
 @Component
 public class ClienteService {

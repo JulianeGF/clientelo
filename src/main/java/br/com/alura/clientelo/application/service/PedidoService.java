@@ -12,8 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import br.com.alura.clientelo.application.controller.PedidoController.pedidoDto.PedidoDto;
-import br.com.alura.clientelo.application.model.pedidoEntity.Pedido;
-import br.com.alura.clientelo.application.repository.PedidoRepository;
+import br.com.alura.clientelo.domain.model.pedidoEntity.Pedido;
+import br.com.alura.clientelo.domain.repository.PedidoRepository;
 
 @Component
 public class PedidoService {

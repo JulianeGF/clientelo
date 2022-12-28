@@ -7,7 +7,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import br.com.alura.clientelo.application.model.pedidoEntity.Pedido;
+import br.com.alura.clientelo.domain.model.pedidoEntity.Pedido;
 
 public class PedidoReader implements FileReader<Pedido> {
 

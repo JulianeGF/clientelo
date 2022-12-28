@@ -1,9 +1,8 @@
 package br.com.alura.clientelo;
 
-import br.com.alura.clientelo.application.repository.CategoriaRepository;
-import br.com.alura.clientelo.application.repository.ClienteRepository;
-import br.com.alura.clientelo.application.repository.UsuarioRepository;
-import br.com.alura.clientelo.repository.*;
+import br.com.alura.clientelo.domain.repository.CategoriaRepository;
+import br.com.alura.clientelo.domain.repository.ClienteRepository;
+import br.com.alura.clientelo.domain.repository.UsuarioRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

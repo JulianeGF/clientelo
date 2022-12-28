@@ -11,8 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import br.com.alura.clientelo.application.controller.categoriaController.categoriaDto.CategoriaDto;
-import br.com.alura.clientelo.application.model.categoriaEntity.Categoria;
-import br.com.alura.clientelo.application.repository.CategoriaRepository;
+import br.com.alura.clientelo.domain.model.categoriaEntity.Categoria;
+import br.com.alura.clientelo.domain.repository.CategoriaRepository;
 
 @Component
 public class CategoriaService {
